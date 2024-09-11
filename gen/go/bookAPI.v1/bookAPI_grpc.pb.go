@@ -4,7 +4,7 @@
 // - protoc             v3.12.4
 // source: bookAPI/bookAPI.proto
 
-package bookAPI_v1
+package bookAPIv1
 
 import (
 	context "context"
