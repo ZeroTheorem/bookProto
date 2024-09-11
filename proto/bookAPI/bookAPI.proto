@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package bookAPI;
 
-option go_package = "bookAPI.v1";
+option go_package = "bookAPI.v1;bookAPIv1";
 
 service Book {
     rpc GetOneBookByID (OneBookRequest) returns (OneBookResponse);
