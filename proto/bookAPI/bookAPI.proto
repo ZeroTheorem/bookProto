@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package bookAPI;
+
+option go_package = "bookAPI.v1";
+
+service Book {
+    rpc GetOneBookByID (OneBookRequest) returns (OneBookResponse);
+}
+
+message OneBookRequest {
+    int64 book_id = 1;
+}
+
+message OneBookResponse {
+    string title = 1;
+}
